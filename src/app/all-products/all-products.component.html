@@ -1,0 +1,22 @@
+<p-dropdown [options]="products"  optionLabel="id" (onChange)="getProductDesc($event)"></p-dropdown>
+<div *ngIf="selectedProduct">
+    <div style="display: flex;">
+        <span>id</span>
+        <span>{{selectedProduct.id}}</span>
+      </div>
+      
+      <div style="display: flex;">
+        <span>name</span>
+        <span>{{selectedProduct.name}}</span>
+      </div>
+      
+      <div style="display: flex;">
+        <span>prix</span>
+        <span>{{selectedProduct.price}}</span>
+      </div>
+      
+      <div style="display: flex;">
+        <span>type</span>
+        <span>{{selectedProduct.type}}</span>
+      </div>
+</div>
